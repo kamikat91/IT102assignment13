@@ -39,6 +39,7 @@ Partial Class frmAddPassengers
         Me.btnsubmit = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtemail = New System.Windows.Forms.TextBox()
+        Me.btnexit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label7
@@ -108,35 +109,35 @@ Partial Class frmAddPassengers
         '
         Me.txtfirstname.Location = New System.Drawing.Point(418, 68)
         Me.txtfirstname.Name = "txtfirstname"
-        Me.txtfirstname.Size = New System.Drawing.Size(100, 22)
+        Me.txtfirstname.Size = New System.Drawing.Size(150, 22)
         Me.txtfirstname.TabIndex = 22
         '
         'txtlastname
         '
         Me.txtlastname.Location = New System.Drawing.Point(418, 106)
         Me.txtlastname.Name = "txtlastname"
-        Me.txtlastname.Size = New System.Drawing.Size(100, 22)
+        Me.txtlastname.Size = New System.Drawing.Size(150, 22)
         Me.txtlastname.TabIndex = 21
         '
         'txtaddress
         '
         Me.txtaddress.Location = New System.Drawing.Point(418, 212)
         Me.txtaddress.Name = "txtaddress"
-        Me.txtaddress.Size = New System.Drawing.Size(100, 22)
+        Me.txtaddress.Size = New System.Drawing.Size(150, 22)
         Me.txtaddress.TabIndex = 20
         '
         'txtcity
         '
         Me.txtcity.Location = New System.Drawing.Point(418, 249)
         Me.txtcity.Name = "txtcity"
-        Me.txtcity.Size = New System.Drawing.Size(100, 22)
+        Me.txtcity.Size = New System.Drawing.Size(150, 22)
         Me.txtcity.TabIndex = 19
         '
         'txtphonenumber
         '
         Me.txtphonenumber.Location = New System.Drawing.Point(418, 145)
         Me.txtphonenumber.Name = "txtphonenumber"
-        Me.txtphonenumber.Size = New System.Drawing.Size(100, 22)
+        Me.txtphonenumber.Size = New System.Drawing.Size(150, 22)
         Me.txtphonenumber.TabIndex = 18
         '
         'cbostate
@@ -144,14 +145,14 @@ Partial Class frmAddPassengers
         Me.cbostate.FormattingEnabled = True
         Me.cbostate.Location = New System.Drawing.Point(418, 328)
         Me.cbostate.Name = "cbostate"
-        Me.cbostate.Size = New System.Drawing.Size(121, 24)
+        Me.cbostate.Size = New System.Drawing.Size(171, 24)
         Me.cbostate.TabIndex = 17
         '
         'txtzipcode
         '
         Me.txtzipcode.Location = New System.Drawing.Point(418, 288)
         Me.txtzipcode.Name = "txtzipcode"
-        Me.txtzipcode.Size = New System.Drawing.Size(100, 22)
+        Me.txtzipcode.Size = New System.Drawing.Size(150, 22)
         Me.txtzipcode.TabIndex = 16
         '
         'btnsubmit
@@ -176,14 +177,24 @@ Partial Class frmAddPassengers
         '
         Me.txtemail.Location = New System.Drawing.Point(418, 179)
         Me.txtemail.Name = "txtemail"
-        Me.txtemail.Size = New System.Drawing.Size(100, 22)
+        Me.txtemail.Size = New System.Drawing.Size(150, 22)
         Me.txtemail.TabIndex = 30
+        '
+        'btnexit
+        '
+        Me.btnexit.Location = New System.Drawing.Point(713, 415)
+        Me.btnexit.Name = "btnexit"
+        Me.btnexit.Size = New System.Drawing.Size(75, 23)
+        Me.btnexit.TabIndex = 52
+        Me.btnexit.Text = "EXIT"
+        Me.btnexit.UseVisualStyleBackColor = True
         '
         'frmAddPassengers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnexit)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtemail)
         Me.Controls.Add(Me.Label7)
@@ -225,4 +236,5 @@ Partial Class frmAddPassengers
     Friend WithEvents btnsubmit As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents txtemail As TextBox
+    Friend WithEvents btnexit As Button
 End Class

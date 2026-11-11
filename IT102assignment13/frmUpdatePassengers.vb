@@ -115,5 +115,11 @@ Public Class frmUpdatePassengers
 
             End Using
         End Using
+
+        MessageBox.Show("Row updated!")
+    End Sub
+
+    Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
+        Me.Close()
     End Sub
 End Class
